@@ -1,0 +1,470 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    font-family: Arial, sans-serif;
+    background: black;
+}
+header{
+    grid-area: header;
+    height: 8rem;
+    padding: 2rem;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+.head{
+    background-color: rgba(4, 14, 6, 0.79);
+    height: 4rem;
+    border-radius: 100px;
+    padding: 0 5rem;
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.528);
+    animation: appear 1.5s ease;
+}
+.head:hover{
+    background: black;
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
+#top-nav{
+    display: flex;
+    gap: 5rem;
+    margin-left: 10rem;
+}
+h1{
+    font-size: xx-large;
+}
+h2{
+    font-size: 2.5rem;
+    color: white;
+}
+#top-nav a{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+#top-nav a:hover{
+    color: rgb(0, 34, 255);
+}
+
+input{
+    font-size: large;
+    font-weight: bold;
+    width: 250px;
+    padding: 0.3rem 1rem;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.searchbar button{
+    font-size: large;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(145deg, blue,blue,rgba(0, 0, 0, 0.86));
+    color: white;
+    cursor: pointer;
+}
+main{
+    grid-area: main;
+    background: linear-gradient(145deg,black,black,blue,black,black) fixed no-repeat;
+    min-height: 100vh;
+    padding: 10rem 10rem;
+    background-size: 200%;
+    animation: wave 20s ease infinite;
+}
+@keyframes wave {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+    background-color: rgba(255, 255, 255, 0.371);
+    border-radius: 40px;
+    gap: 3rem;
+    animation: appear 2s ease;
+}
+.hero-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+.hero-text p{
+    font-weight: bold;
+    color: rgba(240, 248, 255, 0.658);
+    font-size: large;
+}
+.hero-text button{
+    padding: 0.8rem 1.3rem;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(145deg,blue,blue,black);
+    color: white;
+    cursor: pointer;
+}
+
+
+.h-span{
+    color: rgb(255, 0, 247);
+}
+.hero-img img{
+    width: 30rem;
+}
+.section1{
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;align-items: center;
+}
+.gadgets{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    animation: pop-up ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.gadgets .item{
+    border: 1px solid white;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 100%;
+    position: relative;
+    background: rgba(240, 248, 255, 0.658);
+}
+.gadgets .item button{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 1rem 0rem;
+    width: 10rem;
+    border: none;
+    border-radius: 30px;
+    font-size: large;
+    font-weight: bold;
+    background: linear-gradient(145deg, blue,blue,rgba(0, 0, 0, 0.86));
+    color: aliceblue;
+    cursor: pointer;
+}
+.gadgets div:nth-child(1){
+    background: url(/Salesweb/Images/headphone.jpg) no-repeat center;
+}
+.gadgets div:nth-child(2){
+    background: url(/Salesweb/Images/phone.jpg) no-repeat center;
+}
+.gadgets div:nth-child(3){
+    background: url(/Salesweb/Images/laptop.jpg) no-repeat center;
+}
+.gadgets div:nth-child(4){
+    background: url(/Salesweb/Images/swatch.jpg) no-repeat center;
+}
+.gadgets div:nth-child(5){
+    background: url(/Salesweb/Images/tab.jpg) no-repeat center;
+}
+button{
+    cursor: pointer;
+}
+.showbox{
+    animation: pop-up ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.right-showbox{
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    background: blue;
+    padding: 2rem;
+}
+.right-showbox .text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: rgba(255, 255, 255, 0.791);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-left: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.right-showbox .text button{
+    padding: 1rem 0rem;
+    width: 10rem;
+    border: none;
+    border-radius: 30px;
+    font-size: large;
+    font-weight: bold;
+    background: white;
+    color: blue;
+    cursor: pointer;
+}
+.right-showbox img{
+    width: 25rem;
+    height: 25rem;
+}
+.left-showbox{
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    background: aliceblue;
+    padding: 2rem;
+}
+.left-showbox .text h2{
+    color: blue;
+}
+.left-showbox .text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: rgba(0, 0, 255, 0.707);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-left: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.left-showbox img{
+    width: 22rem;
+    height: 25rem;
+}
+.left-showbox .text button{
+    padding: 1rem 0rem;
+    width: 10rem;
+    border: none;
+    border-radius: 30px;
+    font-size: large;
+    font-weight: bold;
+    background: blue;
+    color: aliceblue;
+    cursor: pointer;
+}
+.shop{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 10rem;
+}
+.shop-btn{
+    padding: 1rem 0rem;
+    width: 15rem;
+    border: none;
+    border-radius: 30px;
+    font-size: large;
+    font-weight: bold;
+    background: linear-gradient(145deg, blue,blue,rgba(0, 0, 0, 0.86));
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 255, 0.643); 
+}
+
+.items{
+    border-radius: 20px;
+    width: 15rem;
+    height: 23rem;
+    overflow: hidden;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+    background: rgb(249, 252, 255);
+    text-align: center;
+    animation: pop-up ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.items img{
+    width: 100%;
+}
+.items button{
+    background: blue;
+    color: white;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+}
+.news{
+    width: 85rem;
+    background: rgba(255, 255, 255, 0.255);
+    padding: 2rem;
+    border-radius: 30px;
+    animation: pop-up ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 3rem;
+}
+.n-box{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.info button{
+    padding: 1rem 0rem;
+    width: 10rem;
+    border: none;
+    border-radius: 30px;
+    font-size: large;
+    font-weight: bold;
+    background: blue;
+    color: aliceblue;
+    cursor: pointer;
+}
+.info .text{
+    color: rgba(255, 255, 255, 0.797);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.news-box{
+    width: 18rem;
+    height: 18rem;
+    background: conic-gradient(rgb(0, 0, 90), black);
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.news-box p{
+    color: rgba(255, 255, 255, 0.844);
+    font-weight: bold;
+    line-height: 2;
+}
+.news-box button{
+    padding: 0.3rem;
+    width: 6rem;
+    border: none;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+.n-span{
+    color: blue;
+    font-weight: bold;
+    font-size: large;
+}
+
+@keyframes pop-up {
+    from{
+        opacity: 0;
+        scale: 0;
+
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0 ;
+    }
+    to{
+        opacity: 1;
+        scale: 1 ;
+    }
+}
+
+@media (max-width:680px) {
+    #top-nav{
+       display: none;
+    }
+    .head{
+       padding: 0 2rem;
+       height: 3rem;
+       font-size: 1rem;
+    }
+    .searchbar{
+       display: none;
+    }
+   }
+   .active{
+    color: rgb(0, 34, 255);
+    border-bottom: 2px solid blue;
+   }
+footer{
+    height: 20rem;
+    width: 100%;
+    background: rgba(0, 0, 255, 0.182);
+    border-top: 2px solid white;
+    padding: 2rem 8rem;
+    animation: pop-up ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer div{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 1rem;
+    line-height: 1.6;
+}
+footer div h3{
+    border-bottom: 1px solid white;
+}
+footer div a{
+    color: rgba(240, 248, 255, 0.858);
+}
