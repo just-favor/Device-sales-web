@@ -13,8 +13,8 @@ body{
     grid-template-rows: auto;
     font-family:sans-serif;
     background: linear-gradient(145deg,black,black,blue,black,black) fixed no-repeat;
-    background-size: 200%;
-    animation: wave 10s ease infinite;
+    background-size: 300%;
+    animation: wave 15s ease infinite;
 }
 @keyframes wave {
     0%{
@@ -83,9 +83,6 @@ h2{
     align-items: center;
     font-size: 70%;
     gap: 0.4rem;
-}
-.a:hover{
-    color: blue;
 }
 #top-nav a{
     color: white;
