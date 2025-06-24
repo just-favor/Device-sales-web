@@ -255,6 +255,7 @@
         dropdown.style.alignItems = 'center';
         menu.style.display = 'none';
         close.style.display = 'block';
+        // document.body.classList.add('no-scroll');
         body.style.overflow = 'hidden'; // Prevent scrolling when dropdown is active
     });
 
@@ -263,6 +264,8 @@
         dropdown.style.display = 'none';
         menu.style.display = 'block';
         close.style.display = 'none';
+        // document.body.classList.remove('no-scroll');
+        body.style.overflow = 'auto'; // Allow scrolling when dropdown is inactive
     });
 </script>
 </html>
