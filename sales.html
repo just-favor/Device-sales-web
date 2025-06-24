@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SalesWeb</title>
     <link rel="stylesheet" href="sales.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 <body>
     <header>
@@ -13,13 +14,45 @@
                 Logo
             </h1>
             <nav id="top-nav">
-                <a href="/Salesweb/Salesweb.html"><p class="active">Home</p></a>
-                <a href=""><p>Shop</p></a>
-                <a href=""><p>Categories</p></a>
+                <div class="a">
+                    <i class="fa-solid fa-home"></i><a href="/sales.html"><p>Home</p></a>
+                </div>
+                <div class="a">
+                    <i class="fa-solid fa-info"></i><a href="/sales.html"><p>About</p></a>
+                </div>
+                <div class="a">
+                    <i class="fa-solid fa-comments"></i><a href="/sales.html"><p>Enquiry</p></a>
+                </div>
             </nav>
             <div class="searchbar">
             <input type="text" placeholder="search... ">
-            <button>Search</button>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="menu-wrapper">
+                <i class="fa-solid fa-bars" id="menu"></i>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-a">
+                    <div class="searchbr">
+                        <input type="text" placeholder="search... ">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                </div>
+                <div class="dropdown-a">
+                    <i class="fa-solid fa-home"></i><a href="">Home</a>
+                </div>
+                <div class="dropdown-a">
+                    <i class="fa-solid fa-info"></i><a href="">About</a>
+                </div>
+                <div class="dropdown-a">
+                    <i class="fa-solid fa-comments"></i><a href="">Enquiry</a>
+                </div>
+                <div class="dropdown-a">
+                    <i class="fa-solid fa-laptop"></i><a href="">Devices</a>
+                </div>
+
+
             </div>
         </div>
     </header>
@@ -33,7 +66,7 @@
                 <button>Explore</button>
             </div>
             <div class="hero-img">
-                <img src="/Salesweb/Images/ps5-gad.png" alt="">
+                <img src="/images/ps5.png" alt="">
             </div>
         </div>
         <section class="section1">
@@ -64,149 +97,172 @@
                                 Inc., which run the iOS and iPad OS mobile operating systems.</p>
                                 <button>Purchase</button>
                     </div>
-                    <img src="/Salesweb/Images/tab.jpg" alt="">
+                    <img src="/images/tabs.jpg" alt="">
                 </div>
                 <div class="right-showbox">
                 <div class="text">
-                    <p>SMART</p>
+                    <p>SMART WATCHES</p>
                     <h2>Apple <br>
                         Watch</h2>
                         <p>Apple Watch is a line of smartwatches produced by Apple Inc.
                              It incorporates fitness tracking, health-oriented capabilities.</p>
                              <button>Purchase</button>
                 </div>
-                <img src="/Salesweb/Images/watch-1-1-600x600.png" alt="">
+                <img src="/images/iwatch-removebg-preview.png" alt="">
                 </div>
             </div>
-            <div class="shop">
-                <div class="items">
-                    <img src="/Salesweb/Images/iphone14.jpg" alt="">
-                    <h3>Iphone 14</h3>
-                    <span class="price">$1,599</span>
-                    <button>Buy</button>
-                </div>
-                <div class="items">
-                    <img src="/Salesweb/Images/android.jpg" alt="">
-                    <h3>Android phone</h3>
-                    <span class="price">$599</span>
-                    <button>Buy</button>
-                </div>
-                <div class="items">
-                    <img src="/Salesweb/Images/xbox.jpg" alt="">
-                    <h3>X Box</h3>
+            <hr style="width: 100%;">
+            <div style="text-align: center;" class="s-t">
+                <h2>Our <span class="h-span">Products</span></h2>
+                <p style="color: white; margin: 2rem 0;">We offer the best products at affordable prices. Our products are durable and reliable.</p>
+                <div class="shop">
+                    <div class="items">
+                        <img src="/images/apiph.jpeg" alt="">
+                        <h3>Iphone 14</h3>
+                        <span class="price">$1,599</span>
+                        <button>Buy</button>
+                    </div>
+                    <div class="items">
+                        <img src="/images/androidph.jpeg" alt="">
+                        <h3>Android phone</h3>
+                        <span class="price">$599</span>
+                        <button>Buy</button>
+                    </div>
+                    <div class="items">
+                        <img src="/images/xbox.jpeg" alt="">
+                        <h3>X Box</h3>
                     <span class="price">$1,999</span>
                     <button>Buy</button>
                 </div>
                 <div class="items">
-                    <img src="/Salesweb/Images/tablet.jpg" alt="">
+                    <img src="/images/tabs.jpg" alt="">
                     <h3>Tab</h3>
                     <span class="price">$799</span>
                     <button>Buy</button>
                 </div>
                 <div class="items">
-                    <img src="/Salesweb/Images/laptop.jpg" alt="">
+                    <img src="/images/laptop.jpg" alt="">
                     <h3>Laptop</h3>
                     <span class="price">$1,299</span>
                     <button>Buy</button>
                 </div>
                 <div class="items">
-                    <img src="/Salesweb/Images/macbook.jpg" alt="">
+                    <img src="/images/macbook.jpeg" alt="">
                     <h3>MacBook</h3>
                     <span class="price">$1,299</span>
                     <button>Buy</button>
                 </div>
                 <div class="items">
-                    <img src="/Salesweb/Images/ps5-gad.png" alt="">
+                    <img src="/images/ps5.png" alt="">
                     <h3>PS 5</h3>
                     <span class="price">$1,799</span>
                     <button>Buy</button>
                 </div>
                 <div class="items">
-                    <img src="/Salesweb/Images/sportwatch.jpg" alt="">
+                    <img src="/images/smartone.jpeg" alt="">
                     <h3>SportWatch</h3>
                     <span class="price">$1,299</span>
                     <button>Buy</button>
                 </div>
                 <div class="items">
-                    <img src="/Salesweb/Images/swatch.jpg" alt="">
+                    <img src="/images/iwatch.jpeg" alt="">
                     <h3>Smart Watch</h3>
                     <span class="price">$1,299</span>
                     <button>Buy</button>
                 </div>
                 <div class="items">
-                    <img src="/Salesweb/Images/headphone.jpg" alt="">
+                    <img src="/images/beats.jpeg" alt="">
                     <h3>Headphone</h3>
                     <span class="price">$1,299</span>
                     <button>Buy</button>
                 </div>
             </div>
             <button class="shop-btn">View all Products</button>
+            
+            <hr style="width: 100%; margin-top: 5rem;">
             <div class="news">
              <div class="info">
-                <div class="text">
-                    <h2>Latest<span class="h-span"> News</span></h2>
+                <div class="text" style="text-align: center; width: 100%;">
+                    <h2>Latest <span class="h-span">Devices</span></h2>
                     <p>Get updated with the latest news of new technologies and gadgets </p>
                 </div>
-                <button>All News</button>
              </div>
              <div class="n-box">
                 <div class="news-box">
-                    <p><span class="n-span">Upcoming...</span> <br>
-                    We are bringing new events your way this month.  <br>
-                    We have exciting new products coming your way this 
-                    month, Stay tuned and dont to miss out.
-                </p>
-                    <button>View</button>
+                   <img src="/images/macbook.jpeg" alt="">
                 </div>
                 <div class="news-box">
-                    <p><span class="n-span">Upcoming...</span> <br>
-                        We are bringing new events your way this month.  <br>
-                        We have exciting new products coming your way this 
-                        month, Stay tuned and dont to miss out.</p>
-                    <button>View</button>
+                    <img src="/images/iwatch.jpeg" alt="">
                 </div>
                 <div class="news-box">
-                    <p><span class="n-span">Upcoming...</span> <br>
-                        We are bringing new events your way this month.  <br>
-                        We have exciting new products coming your way this 
-                        month, Stay tuned and dont to miss out.</p>
-                    <button>View</button>
+                    <img src="/images/androidph.jpeg" alt="">
                 </div>
-                <div class="news-box">
-                    <p><span class="n-span">Upcoming...</span> <br>
-                        We are bringing new events your way this month.  <br>
-                        We have exciting new products coming your way this 
-                        month, Stay tuned and dont to miss out.</p>
-                    <button>View</button>
-                </div>
-                </div>
+            </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="add">
-            <div>
-            <h3>Information</h3>
-                <a href="">Address</a>
-                <a href="">Our Services</a>
-                <a href="">Affiliate</a>
-                <a href="">Products</a>
-            </div>
+    <div class="foot-cover">
+        <div class="links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="/Salesweb/Salesweb.html">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Categories</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
         </div>
-        <div class="b-nav">
-            <h3>Useful links</h3>
-            <a href="">Our shops</a>
-            <a href="">Services</a>
-            <a href="">News</a>
-            <a href="">Contact</a>
-        </div>
-        <div class="support">
+
+        <div class="links">
             <h3>Support</h3>
-            <a href="">FAQs</a>
-            <a href="">Refunds</a>
-            <a href="">Privacy Policy</a>
-            <a href="">Report</a>
+            <ul>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Refund</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Report</a></li>
+                <li><a href="">DMCA</a></li>
+            </ul>
         </div>
+
+        <div class="links">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="">Products</a></li>
+                <li><a href="">Payments</a></li>
+                <li><a href="">Discounts</a></li>
+                <li><a href="">Categories</a></li>
+                <li><a href="">Promotional</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="/images/virtual.png" alt="">
+        </div>
+    </div>
     </footer>
 </body>
+<script>
+    const menu = document.getElementById('menu');
+    const close = document.getElementById('close');
+    const dropdown = document.querySelector('.dropdown');
+    const body = document.querySelector('body');
+
+    menu.addEventListener('click', () => {
+        dropdown.classList.add('active');
+        dropdown.style.display = 'flex';
+        dropdown.style.flexDirection = 'column';
+        dropdown.style.justifyContent = 'center';
+        dropdown.style.alignItems = 'center';
+        menu.style.display = 'none';
+        close.style.display = 'block';
+        body.style.overflow = 'hidden'; // Prevent scrolling when dropdown is active
+    });
+
+    close.addEventListener('click', () => {
+        dropdown.classList.remove('active');
+        dropdown.style.display = 'none';
+        menu.style.display = 'block';
+        close.style.display = 'none';
+    });
+</script>
 </html>
