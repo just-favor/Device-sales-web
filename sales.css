@@ -16,7 +16,7 @@ body{
     /* background-size: 200%; */
     animation: wave 5s ease infinite;
 }
-/* @keyframes wave {
+@keyframes wave {
     0%{
         background-position: 0% 50%;
     }
@@ -26,7 +26,7 @@ body{
     100%{
         background-position: 0 50%;
     }
-} */
+}
 #menu{
     display: none;
 }
