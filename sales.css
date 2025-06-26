@@ -12,20 +12,7 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     font-family:sans-serif;
-    background: linear-gradient(145deg,black,black,blue,black,black) fixed no-repeat;
-    background-size: 200%;
-    animation: wave 12s ease infinite;
-}
-@keyframes wave {
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0 50%;
-    }
+    background: rgb(11, 0, 55);
 }
 #menu{
     display: none;
@@ -47,7 +34,7 @@ header{
     top: 0;
 }
 .head{
-    background-color: rgba(4, 14, 6, 0.79);
+    background-color: rgba(0, 30, 255, 0.79);
     height: 4rem;
     border-radius: 100px;
     padding: 0 5rem;
@@ -56,12 +43,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.528);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     animation: appear 1.5s ease;
     z-index: 1000;
 }
 .head:hover{
-    background: black;
+    background: rgb(0, 30, 255);
     transform: scale(1.02);
     transition: 0.3s ease;
 }
@@ -151,12 +138,12 @@ main{
     font-size: large;
 }
 .hero-text button{
-    padding: 0.8rem 1.3rem;
+    padding: 0.5rem 1.3rem;
     font-size: large;
     font-weight: bold;
     border-radius: 40px;
     border: none;
-    background: linear-gradient(145deg,blue,blue,black);
+    background: blue;
     color: white;
     cursor: pointer;
 }
@@ -327,10 +314,9 @@ button{
     border-radius: 30px;
     font-size: large;
     font-weight: bold;
-    background: linear-gradient(145deg, blue,blue,rgba(0, 0, 0, 0.86));
+    background: blue;
     color: aliceblue;
     cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0, 255, 0.643);
     animation: pop-up ease;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
