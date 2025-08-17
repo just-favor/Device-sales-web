@@ -1,0 +1,131 @@
+.products {
+  margin-top: 60px;
+  padding: 2rem;;
+}
+.products h2{
+  color: aqua;
+  padding: 5px;
+  border-bottom: 4px solid aqua;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  row-gap: 3rem;
+}
+  
+.product-card {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+  
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-card p{
+  color: rgb(0, 102, 68);
+}
+
+.product-card button{
+  background-color: rgb(0, 102, 68);
+  color: white;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 100px;
+  margin: 10px 0;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-card button:hover{
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  background-color: rgb(0, 188, 126);
+}
+
+.product-card h3{
+  text-align: left;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+
+.searchbar{
+  display: flex;
+  margin: 0 auto 30px;
+  width: 500px;
+}
+.searchbar input{
+  font-size: large;
+  padding: 8px 15px;
+  border-radius: 30px;
+  border: 1px solid aqua;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.597);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.753);
+  color: rgb(255, 255, 255);
+}
+.searchbar button{
+  color: aqua;
+  background-color: transparent;
+  position: absolute;
+  padding: 5px;
+  top: 2px;
+  right: 5px;
+  border: none;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.add-btn-cover{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-right: 20px; */
+  /* border-top: 2px solid black; */
+}
+
+@media (max-width: 800px) {
+  .product-card{
+    padding: 2px;
+    height: 320px;
+    animation-range: entry 10% cover 65vh;
+  }
+
+  .product-card img{
+    width: 60%;
+  }
+
+  .product-card p{
+    font-size: 0.7rem;
+  }
+
+  .product-card h3{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+  }
+
+  .product-grid{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .searchbar input{
+    width: 100%;
+  }
+  .searchbar{
+    width: 100%;
+  }.add-btn-cover{
+    padding: 0 10px;
+  }
+
+}

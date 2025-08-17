@@ -1,0 +1,186 @@
+header{
+    background-color: rgba(0, 0, 0, 0.733);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.head{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    height: 70px;
+    animation: pop-in 1.3s ease-in-out;
+    position: relative;
+}
+
+@keyframes pop-in {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    background-color: rgb(0, 0, 0);
+    height: 55px;
+    width: 600px;
+    border-radius: 30px;
+    position: relative;
+    border: 2px solid aqua;
+    backdrop-filter: blur(10px);
+    color: aqua;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: xx-large;
+    width: 180px;
+    color: aqua;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+a{
+    font-size: larger;
+    font-weight: 600;
+    color:  aqua;
+}
+
+.menu-wrapper{
+    display: none;
+}
+
+.searchbar{
+    position: relative;
+    width: 300px;
+}
+
+.cart-count{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    background-color: red;
+    color: white;
+    border-radius: 100px;
+    padding: 2px 6px;
+    font-size: 10px;
+}
+
+.login-bar{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login-btn{
+    background-color: none;
+    color: aqua;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid aqua;
+    margin-right: 20px;
+}
+
+.login-btn:hover{
+    background-color: aqua;
+    color: black;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.head-icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .menu-wrapper{
+        display: block;
+    }
+    header{
+        height: 50px;
+    }
+    .head{
+        padding: 5px;
+        height: 50px;
+    }
+    #top-nav{
+        display: none;
+    }
+    .login-btn{
+        display: none;
+    }
+    .mobile-login-btn{
+        background-color: rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        padding: 5px 20px;
+        border-radius: 20px;
+        border: 2px solid aqua;
+        margin-right: 20px;
+    }
+    .mobile-dropdown-btn{
+        color: aqua;
+        background: transparent;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    #close, #menu{
+        background-color: transparent;
+        border: none;
+    }
+    .dropdown{
+        background-color: rgba(0, 122, 122, 0.938);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        right: 0;
+        top: 50px;
+        backdrop-filter: blur(10px);
+        width: 50%;
+        height: 100vh;
+        /* border-left: 2px solid aqua; */
+    }
+    .dropdown-a{
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+    .dropdown-a {
+        border-bottom: 1px solid aqua;
+        width: 100%;
+        text-align: center;
+    }
+    .dropdown-a a{
+        color: aqua;
+    }
+    .mobile-login-btn{
+        width: 90%;
+        margin: 0 auto;
+        color: black;
+    }
+    .cart-count{
+        position: absolute;
+        top: 170px;
+        right: 65px;
+        background-color: red;
+        color: white;
+        border-radius: 100px;
+        padding: 2px 6px;
+        font-size: 10px;
+    }
+}
