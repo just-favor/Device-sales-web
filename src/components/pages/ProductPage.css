@@ -1,6 +1,7 @@
 .products {
   margin-top: 60px;
-  padding: 2rem;;
+  padding: 2rem;
+  z-index: -1;
 }
 .products h2{
   color: aqua;
@@ -85,6 +86,7 @@
   border: none;
   font-size: x-large;
   cursor: pointer;
+  z-index: -1;
 }
 
 .add-btn-cover{
@@ -121,10 +123,12 @@
 
   .searchbar input{
     width: 100%;
+    /* z-index: -1; */
   }
   .searchbar{
     width: 100%;
-  }.add-btn-cover{
+  }
+  .add-btn-cover{
     padding: 0 10px;
   }
 
