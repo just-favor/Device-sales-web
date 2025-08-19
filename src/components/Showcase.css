@@ -135,7 +135,7 @@ to {
 
 
   /* Responsive */
-  @media (max-width: 768px) {
+  @media (max-width: 868px) {
 
     .showbox {
       flex-direction: column;
@@ -149,7 +149,8 @@ to {
       flex-direction: column;
       text-align: center;
       gap: 10px;
-      position: relative;;
+      position: relative;
+      animation: none;
     }
   
     .text {

@@ -46,7 +46,7 @@ function ProductPage() {
       <div className="product-grid">
         {filteredGadgets.length > 0 ? (
           filteredGadgets.map(prod => (
-            <div className="product-card" key={prod.id}>
+            <div className="product-cards" key={prod.id}>
               <img src={prod.image} alt={prod.title} />
               <h3>{prod.title.slice(0, 18) + "..."}</h3>
               <div className="add-btn-cover">
