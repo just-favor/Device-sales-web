@@ -11,6 +11,7 @@
   height: fit-content;
   padding: 2rem;
   margin-top: 4rem;
+  z-index: 1;
 }
 
 @keyframes pop-in {
@@ -140,6 +141,7 @@ to {
       flex-direction: column;
       align-items: center;
       padding: 1rem;
+      z-index: -1;
     }
 
     .left-showbox,
@@ -147,7 +149,7 @@ to {
       flex-direction: column;
       text-align: center;
       gap: 10px;
-      position: relative;
+      position: relative;;
     }
   
     .text {
@@ -164,7 +166,7 @@ to {
     }
 
     .left-showbox{
-      z-index: 300;
+      z-index: 1;
     }
 
     .right-showbox {
