@@ -28,7 +28,7 @@ function App() {
             <>
               <Hero />
               <Showcase />
-              <Shop limit={10} />
+              <Shop limit={4} />
             </>
           }
           />
