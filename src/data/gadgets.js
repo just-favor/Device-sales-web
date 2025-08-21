@@ -2,7 +2,7 @@
 const gadgets = [
     {
       id: 1,
-      title: "Wireless Bluetooth Headphones",
+      title: "Bluetooth Headphones",
       price: 45.99,
       image: "https://i.pinimg.com/736x/ae/79/08/ae79083e5ae4dacaedfbc804fadd75c4.jpg",
     },
@@ -14,7 +14,7 @@ const gadgets = [
     },
     {
       id: 3,
-      title: "Portable Bluetooth Speaker",
+      title: "Bluetooth Speaker",
       price: 35.00,
       image: "https://i.pinimg.com/736x/88/72/b3/8872b3125cc1aa76136347cdc97eb4b5.jpg",
     },
@@ -38,7 +38,7 @@ const gadgets = [
     },
     {
       id: 7,
-      title: "Drone with 1080p Camera",
+      title: "Drone",
       price: 299.99,
       image: "https://i.pinimg.com/736x/a0/71/3b/a0713b66936bec3af548a38cadd3ee47.jpg",
     },
@@ -128,7 +128,7 @@ const gadgets = [
     },
     {
       id: 22,
-      title: "Wireless Gaming Controller",
+      title: "Gaming Controller",
       price: 49.99,
       image: "https://i.pinimg.com/1200x/c7/ff/96/c7ff962d3236cde1974b64f7c86f7326.jpg",
     },
@@ -140,7 +140,7 @@ const gadgets = [
     },
     {
       id: 24,
-      title: "Wireless Network Extender",
+      title: "Network Extender",
       price: 39.99,
       image: "https://i.pinimg.com/736x/3a/72/c2/3a72c2d30b83f8abf501a24cfd7e113f.jpg",
     },

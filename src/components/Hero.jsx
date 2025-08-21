@@ -35,7 +35,7 @@ function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % slides.length);
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -53,7 +53,7 @@ function Hero() {
               <span className="h-span">{slide.sub}</span>
             </h2>
             <p>{slide.desc}</p>
-            <Link to="/products" > <button className="hero-btn">Explore</button> </Link>
+            {/* <Link to="/products" > <button className="hero-btn">Explore</button> </Link> */}
           </div>
 
           <div className="hero-img">

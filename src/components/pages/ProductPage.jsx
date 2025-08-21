@@ -48,7 +48,7 @@ function ProductPage() {
           filteredGadgets.map(prod => (
             <div className="product-cards" key={prod.id}>
               <img src={prod.image} alt={prod.title} />
-              <h3>{prod.title.slice(0, 18) + "..."}</h3>
+              <h3>{prod.title}</h3>
               <div className="add-btn-cover">
               <p>${prod.price}</p>
               <button onClick={() => handleAddToCart(prod)}><FaShoppingCart  /></button>

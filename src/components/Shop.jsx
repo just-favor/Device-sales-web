@@ -13,7 +13,7 @@ function Shop({ limit }) {
         {displayedProducts.map(prod => (
           <div className="product-card" key={prod.id}>
             <img src={prod.image} alt={prod.title} />
-            <h3 style={{borderBottom: 'none'}}>{prod.title.slice(0, 18) + '...'}</h3>
+            {/* <h3 style={{borderBottom: 'none'}}>{prod.title.slice(0, 18) + '...'}</h3> */}
             {/* <p>${prod.price}</p> */}
           </div>
         ))}
